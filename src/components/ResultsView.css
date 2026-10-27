@@ -1,0 +1,172 @@
+.rv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 20px 40px;
+  gap: 22px;
+  text-align: center;
+  min-height: 100dvh;
+}
+
+.rv-emoji {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.rv-heading {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+/* Ring */
+.rv-ring {
+  width: 150px;
+  height: 150px;
+}
+
+.rv-ring svg {
+  width: 100%;
+  height: 100%;
+}
+
+.rv-pct-num {
+  font-size: 20px;
+  font-weight: 700;
+  fill: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.rv-pct-sub {
+  font-size: 11px;
+  fill: var(--text-3);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Breakdown */
+.rv-breakdown {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 18px 36px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.rv-stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.rv-val {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.rv-got .rv-val {
+  color: var(--green);
+}
+
+.rv-missed .rv-val {
+  color: var(--red);
+}
+
+.rv-lbl {
+  font-size: 0.75rem;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 600;
+}
+
+.rv-divider {
+  width: 1px;
+  height: 44px;
+  background: var(--border);
+}
+
+/* Missed list */
+.rv-miss-list {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.rv-miss-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 4px;
+}
+
+.rv-miss-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  gap: 12px;
+}
+
+.rv-miss-q {
+  font-size: 0.85rem;
+  color: var(--text-2);
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rv-miss-a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--red);
+  flex-shrink: 0;
+}
+
+/* Actions */
+.rv-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.rv-btn {
+  padding: 16px;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+  transition: opacity 0.12s;
+}
+
+.rv-btn:active {
+  opacity: 0.8;
+}
+
+.rv-primary {
+  background: var(--red);
+  color: #fff;
+}
+
+.rv-secondary {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  color: var(--text);
+}

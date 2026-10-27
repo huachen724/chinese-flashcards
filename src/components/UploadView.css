@@ -1,0 +1,154 @@
+.uv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 20px 40px;
+  gap: 20px;
+}
+
+.uv-hero {
+  text-align: center;
+  padding: 8px 0 4px;
+}
+
+.uv-hanzi {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+.uv-sub {
+  margin-top: 6px;
+  color: var(--text-2);
+  font-size: 0.9rem;
+}
+
+/* Tabs */
+.uv-tabs {
+  display: flex;
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+  gap: 4px;
+}
+
+.uv-tab {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-3);
+  transition: all 0.15s;
+}
+
+.uv-tab.active {
+  background: var(--surface-raised);
+  color: var(--text);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+/* Section */
+.uv-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.uv-hint {
+  font-size: 0.85rem;
+  color: var(--text-2);
+  line-height: 1.55;
+}
+
+.uv-hint code {
+  font-family: 'SF Mono', Consolas, monospace;
+  background: var(--surface);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: var(--text);
+}
+
+.uv-example {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-family: 'SF Mono', Consolas, monospace;
+  font-size: 0.78rem;
+  color: var(--text-2);
+  overflow-x: auto;
+  white-space: pre;
+  line-height: 1.6;
+}
+
+.uv-file-btn {
+  align-self: flex-start;
+  padding: 9px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  color: var(--text);
+  transition: background 0.15s;
+}
+
+.uv-file-btn:active {
+  background: var(--border);
+}
+
+.uv-hidden {
+  display: none;
+}
+
+.uv-textarea {
+  width: 100%;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  font-size: 0.85rem;
+  color: var(--text);
+  font-family: 'SF Mono', Consolas, monospace;
+  resize: vertical;
+  line-height: 1.65;
+  transition: border-color 0.15s;
+}
+
+.uv-textarea:focus {
+  outline: none;
+  border-color: var(--red);
+}
+
+.uv-error {
+  color: var(--red);
+  font-size: 0.85rem;
+  background: var(--red-bg);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  line-height: 1.5;
+}
+
+.uv-start {
+  padding: 16px;
+  background: var(--red);
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition: opacity 0.15s;
+  margin-top: auto;
+}
+
+.uv-start:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.uv-start:not(:disabled):active {
+  opacity: 0.85;
+}

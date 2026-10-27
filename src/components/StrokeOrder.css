@@ -1,0 +1,58 @@
+.stroke-order {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.so-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-3);
+}
+
+.so-chars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* Individual character stroke block */
+.cs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.cs-canvas {
+  /* hanzi-writer injects SVG here */
+  line-height: 0;
+}
+
+.cs-play {
+  width: 80px;
+  padding: 4px 0;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-size: 0.7rem;
+  color: var(--text-2);
+  transition: background 0.12s;
+}
+
+.cs-play:hover:not(:disabled) {
+  background: var(--border);
+}
+
+.cs-play:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.cs-fallback {
+  font-size: 2.5rem;
+  display: inline-block;
+  color: var(--text-2);
+}
