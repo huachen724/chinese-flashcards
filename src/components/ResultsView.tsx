@@ -5,10 +5,10 @@ interface Props {
   cards: FlashCard[];
   outcomes: CardOutcome[];
   onRedoMissed: (missed: FlashCard[]) => void;
-  onRestart: () => void;
+  onBack: () => void;
 }
 
-export function ResultsView({ cards, outcomes, onRedoMissed, onRestart }: Props) {
+export function ResultsView({ cards, outcomes, onRedoMissed, onBack }: Props) {
   const gotCount = outcomes.filter((o) => o === 'got-it').length;
   const missedCount = outcomes.filter((o) => o === 'missed').length;
   const total = cards.length;
@@ -18,7 +18,7 @@ export function ResultsView({ cards, outcomes, onRedoMissed, onRestart }: Props)
   const emoji = pct === 100 ? '🎉' : pct >= 80 ? '👍' : pct >= 50 ? '💪' : '📚';
   const heading =
     pct === 100
-      ? 'Perfect score!'
+      ? 'Perfect!'
       : pct >= 80
         ? 'Great work!'
         : pct >= 50
@@ -95,8 +95,8 @@ export function ResultsView({ cards, outcomes, onRedoMissed, onRestart }: Props)
             Redo {missedCards.length} missed {missedCards.length === 1 ? 'card' : 'cards'}
           </button>
         )}
-        <button className="rv-btn rv-secondary" onClick={onRestart}>
-          Upload new deck
+        <button className="rv-btn rv-secondary" onClick={onBack}>
+          ← Back to set
         </button>
       </div>
     </div>

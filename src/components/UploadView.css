@@ -2,27 +2,65 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 28px 20px 40px;
+  padding: 0 20px 40px;
   gap: 20px;
 }
 
+.uv-topbar {
+  padding: 16px 0 0;
+}
+
+.uv-back {
+  font-size: 0.95rem;
+  color: var(--red);
+  font-weight: 600;
+  padding: 4px 0;
+}
+
 .uv-hero {
-  text-align: center;
-  padding: 8px 0 4px;
+  text-align: left;
+  padding: 4px 0;
 }
 
 .uv-hanzi {
   display: block;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
   line-height: 1.2;
 }
 
 .uv-sub {
   margin-top: 6px;
   color: var(--text-2);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+}
+
+/* Name input */
+.uv-name-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.uv-name-input {
+  width: 100%;
+  padding: 12px 13px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.uv-name-input:focus {
+  outline: none;
+  border-color: var(--red);
+}
+
+.uv-name-input::placeholder {
+  font-weight: 400;
+  color: var(--text-3);
 }
 
 /* Tabs */

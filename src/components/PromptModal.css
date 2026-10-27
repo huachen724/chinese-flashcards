@@ -1,0 +1,84 @@
+.pm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  display: flex;
+  align-items: flex-end;
+}
+
+.pm-sheet {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--bg);
+  border-radius: 20px 20px 0 0;
+  padding: 20px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 85dvh;
+  overflow: hidden;
+}
+
+.pm-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.pm-header > div {
+  flex: 1;
+}
+
+.pm-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.pm-sub {
+  font-size: 0.8rem;
+  color: var(--text-3);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+.pm-close {
+  color: var(--text-3);
+  font-size: 1rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.pm-text {
+  flex: 1;
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  font-family: 'SF Mono', Consolas, monospace;
+  font-size: 0.76rem;
+  line-height: 1.65;
+  color: var(--text-2);
+  white-space: pre-wrap;
+  word-break: break-word;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pm-copy {
+  width: 100%;
+  padding: 15px;
+  background: var(--red);
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 700;
+  transition: opacity 0.15s;
+  flex-shrink: 0;
+}
+
+.pm-copy:active {
+  opacity: 0.85;
+}

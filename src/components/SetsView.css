@@ -1,0 +1,142 @@
+.sv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.sv-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 28px 20px 16px;
+}
+
+.sv-title {
+  display: block;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.sv-sub {
+  margin-top: 3px;
+  font-size: 0.82rem;
+  color: var(--text-3);
+}
+
+.sv-prompt-btn {
+  margin-top: 6px;
+  padding: 7px 13px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-2);
+  white-space: nowrap;
+}
+
+/* Body */
+.sv-body {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.sv-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 0;
+  gap: 10px;
+  text-align: center;
+}
+
+.sv-empty-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.sv-empty-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.sv-empty-hint {
+  font-size: 0.85rem;
+  color: var(--text-3);
+  max-width: 240px;
+  line-height: 1.5;
+}
+
+/* List */
+.sv-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sv-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: left;
+  gap: 12px;
+  transition: background 0.12s;
+}
+
+.sv-item:active {
+  background: var(--border);
+}
+
+.sv-item-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.sv-item-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sv-item-meta {
+  font-size: 0.78rem;
+  color: var(--text-3);
+}
+
+.sv-item-arrow {
+  font-size: 1.4rem;
+  color: var(--text-3);
+  line-height: 1;
+}
+
+/* Footer */
+.sv-footer {
+  padding: 16px 20px 40px;
+}
+
+.sv-new-btn {
+  width: 100%;
+  padding: 16px;
+  background: var(--red);
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.sv-new-btn:active {
+  opacity: 0.85;
+}
